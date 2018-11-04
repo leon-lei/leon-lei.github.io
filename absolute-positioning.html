@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Absolute Positioning</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+     
+    div#container {
+        background-color: #00FFFF;
+        position: relative;
+        top: 60px;
+    }
+    p {
+        border: 1px solid black;
+        margin-bottom: 15px;
+        height: 50px;
+        width: 50px;
+    }
+    #p1 {
+        background-color: #A52A2A;
+        position: relative;
+        top: 65px;
+        left: 65px;
+    }
+    #p2 {
+        background-color: #DEB887;
+    }
+    #p3 {
+        background-color: #5F9EA0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    #p4 {
+        background-color: #FF7F50;
+    }
+    section {
+        clear: left;
+    }
+    </style>
+</head>
+<body>
+    <h1>Absolute Positioning</h1>
+    <div id="container">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <section>Static positioning is default for all elements except html</section>
+        <section>Absolute positioning is relative to closest ancestor which has positioning set to non-static value</section>
+        <section>If no element has position set, then absolute positioning will use the html element to offset</section>
+    </div>
+
+</body>
+</html>
