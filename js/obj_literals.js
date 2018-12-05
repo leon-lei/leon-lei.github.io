@@ -1,3 +1,4 @@
+// Take note of "this" obj
 function test() {
     console.log(this);
     this.myName = 'Leon'
@@ -9,7 +10,6 @@ console.log(window.myName);
 // Function Constructor
 function Circle (radius) {
     this.radius = radius;
-
 }
 
 Circle.prototype.getArea = 
@@ -23,7 +23,6 @@ console.log(myCircle.getArea());
 console.log(myCircle);
 
 // Object literals and 'this'
-
 var literalCircle = {
     radius: 10,
 
